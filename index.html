@@ -12,7 +12,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="/script.js"></script>
     <title>Oscar's Website</title>
   </head>
   <body>
@@ -38,4 +37,19 @@
       </div>
     </div>
   </body>
+  <script>
+    function feedAnimal() {
+      const button = document.getElementById('feed-btn')
+      const animalImage = document.getElementById('animal')
+      const currentHeight = animalImage.clientHeight
+
+      if (currentHeight < 150) {
+        animalImage.style.height = currentHeight + 10 + 'px'
+      } else {
+        animalImage.src =
+          'https://tuxpaint.org/stamps/stamps/animals/mammals/rodents/capybara.png'
+        button.disabled = true
+      }
+    }
+  </script>
 </html>
