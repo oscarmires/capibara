@@ -6,7 +6,8 @@ function feedAnimal() {
   if (currentHeight < 150) {
     animalImage.style.height = currentHeight + 10 + 'px'
   } else {
-    animalImage.src = '/images/iu-4.png'
+    animalImage.src =
+      'https://tuxpaint.org/stamps/stamps/animals/mammals/rodents/capybara.png'
     button.disabled = true
   }
 }
